@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbasaur</title>
+    <link rel="stylesheet" href="./bulbasur-styles.css">
+<style>
+    body {
+        background-color: burlywood;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    h1 {
+        margin-top: 40px;
+      margin-bottom: 5px;
+      font-size: 60px;
+      color: #353231;
+    }
+    .header {
+        margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    .header a {
+      text-decoration: none;
+      color: #353231;
+      margin: 20px;
+      font-size: 20px;
+      transition: color 0.3s;
+      }  
+      .header a:hover {
+      background-color: #9560da;
+    }
+    nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav ul {
+    display: inline-block;
+    text-align: left; 
+    padding: 0;
+}
+img {
+    width: 400px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="nombrePokemon" class="azul">Nombre Pokemon</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" data-pokemon="gible">gible</a></li>
+                    <li><a href="#" data-pokemon="wailmer">wailmer</a></li>
+                    <li><a href="#" data-pokemon="cryogonal">cryogonal</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <img id="imagenPokemon" src="">
+
+        </div>
+    </div>
+    <script src="./actions.js"></script>
+</body>
+</html>
